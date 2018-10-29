@@ -11,13 +11,14 @@ int main() {
     // ****
     //
     // The triangle should have as many lines as the number was
+    int number = 0;
+    std::string a = "";
+    std::cout << "Enter an integer: " << std::endl;
+    std::cin >> number;
 
-    std::string a = "*";
-    std::cout << "Enter a string: " << std::endl;
-    std::cin >> a;
-
-    for (a = "*"; a < 10; a++) {
-        std::cout << a << " * " << a << " = "<< a * a << std::endl;
+    for (int x = 0; x < number; x++) {
+        a += "*";
+        std::cout << a << std::endl;
     }
 
 

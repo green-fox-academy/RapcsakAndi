@@ -9,9 +9,9 @@ int main() {
     for (int a = 1; a <= 100; a++){
         if (a % 3 == 0){
             std::cout << "Fizz" << std::endl;
-        }if (a % 5 == 0){
+        }else if (a % 5 == 0){
             std::cout << "Buzz" << std::endl;
-        }if ((a % 3 == 0) && (a % 5 == 0)){
+        }else if ((a % 3 == 0) && (a % 5 == 0)){
             std::cout << "FizzBuzz" << std::endl;
         }
         else {
