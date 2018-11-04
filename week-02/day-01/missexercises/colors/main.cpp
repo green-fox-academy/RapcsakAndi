@@ -10,6 +10,10 @@ int main() {
     // - In `colors[2]` store the shades of pink:
     //   `"orchid", "violet", "pink", "hot pink"`
 
-    std::cout << "Hello, World!" << std::endl;
+    std::string colors [0] = {"lime", "forest green", "olive", "pale green", "spring green" };
+    std::string colors [1] = {"orange red", "red", "tomato"};
+    std::string colors [2] = {"orchid", "violet", "pink", "hot pink"};
+
+
     return 0;
 }
