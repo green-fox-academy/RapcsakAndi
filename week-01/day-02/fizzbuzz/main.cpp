@@ -7,12 +7,12 @@ int main() {
     // For numbers which are multiples of both three and five print “FizzBuzz”.
 
     for (int a = 1; a <= 100; a++){
-        if (a % 3 == 0){
-            std::cout << "Fizz" << std::endl;
+        if ((a % 3 == 0) && (a % 5 == 0)){
+            std::cout << "FizzBuzz" << std::endl;
         }else if (a % 5 == 0){
             std::cout << "Buzz" << std::endl;
-        }else if ((a % 3 == 0) && (a % 5 == 0)){
-            std::cout << "FizzBuzz" << std::endl;
+        }else if (a % 3 == 0){
+            std::cout << "Fizz" << std::endl;
         }
         else {
             std::cout << a << std::endl;

@@ -7,7 +7,8 @@ int main() {
     int a = 0;
     while (a<=100){
         std::cout << "I won't cheat on the exams!" << std::endl;
-        a = a + 1;
+        /*a = a + 1;*/
+        a++;
     }
 
     return 0;

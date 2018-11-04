@@ -14,7 +14,7 @@ int main() {
     int surface = a * b;
     int volume = a * b * c;
 
-    std::cout << "surface: " << surface << std::endl;
-    std::cout << "volume: " << volume << std::endl;
+    std::cout << "Surface Area: " << surface << std::endl;
+    std::cout << "Volume: " << volume << std::endl;
     return 0;
 }

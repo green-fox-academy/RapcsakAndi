@@ -6,5 +6,6 @@ int main() {
     for (int a = 2; a < 500; a += 2 ) {
         std::cout << a << std::endl;
     }
+
     return 0;
 }

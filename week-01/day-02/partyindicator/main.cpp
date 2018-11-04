@@ -23,11 +23,11 @@ int main() {
 
     if((girls == boys) && (girls + boys) >= 20) {
         std::cout << "The party is excellent!" << std::endl;
-    }if((girls + boys >= 20) && (girls != boys)){
+    }else if((girls + boys >= 20) && (girls != boys)){
         std::cout << "Quite cool party!" << std::endl;
-    }if(girls + boys < 20){
+    }else if(girls + boys < 20){
         std::cout << "Average party..." << std::endl;
-    }if(girls == 0){
+    }else if(girls == 0){
         std::cout << "Sausage party" << std::endl;
     }
 

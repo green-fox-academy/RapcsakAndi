@@ -22,7 +22,7 @@ int main() {
 
     if (b <= a){
         std::cout << "The second number should be bigger" << std::endl;
-    }if (a < b){
+    }else if (a < b){
         for ( int c = a; a < b; a++ )
             std::cout << a << std::endl;
     }

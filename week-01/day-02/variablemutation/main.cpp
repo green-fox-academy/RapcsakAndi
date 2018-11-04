@@ -35,48 +35,60 @@ int main() {
     int f1 = 123;
     int f2 = 345;
     // tell if f1 is bigger than f2 (print as a boolean)
-
-    if (f1 > f2) {
+    /*if (f1 > f2) {
         std::cout << "true" << std::endl;
     } else {
         std::cout << "false" << std::endl;
-    }
+    }*/
+    bool wichbigger = false;
+    if(f1>f2){wichbigger = true; }
+    std::cout << std::boolalpha << wichbigger << std::endl;
+
+
     int g1 = 350;
     int g2 = 200;
     // tell if the double of g2 is bigger than g1 (print as a boolean)
 
-    if ( (g2 * 2) > g1) {
+    /*if ( (g2 * 2) > g1) {
         std::cout << "true" << std::endl;
     } else {
         std::cout << "false" << std::endl;
-    }
+    }*/
+
     int h = 135798745;
     // tell if it has 11 as a divisor (print as a boolean)
-    if (h % 11 == 0) {
+    /*if (h % 11 == 0) {
         std::cout << "true" << std::endl;
     }else {
         std:: cout << "false" << std::endl;
-    }
+    }*/
 
     int i1 = 10;
     int i2 = 3;
     // tell if i1 is higher than i2 squared and smaller than i2 cubed (print as a boolean)
-    if ( i1 > i2 * i2 && i1 < i2 * i2 * i2) {        {
+    /*if ( i1 > i2 * i2 && i1 < i2 * i2 * i2) {        {
                 std::cout << "true" << std::endl;
             }
         }else {
             std::cout << "false" << std::endl;
-        }
-
+        }*/
+    bool question = true;
+    if ( i1 > i2 * i2 && i1 <i2 * i2 * i2){
+        std::cout<< std::boolalpha<< question<<std::endl;
+    }
 
     int j = 1521;
     // tell if j is dividable by 3 or 5 (print as a boolean)
-    if ( j % 3 == 0 || j % 5 == 0 ) {
+    /*if ( j % 3 == 0 || j % 5 == 0 ) {
         std::cout << "true" << std::endl;
     }else {
         std::cout << "false" << std::endl;
-    }
+    }*/
+    bool divide = true;
 
+    if ( j % 3 == 0 || j % 5 == 0){
+        std::cout <<std::boolalpha<< divide << std::endl;
+    }
 
     std::string k = "Apple";
     //fill the k variable with its content 4 times

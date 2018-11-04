@@ -12,11 +12,11 @@ int main() {
 
     if (a <= 0){
         std::cout << "Not enough" << std::endl;
-    }if (a == 1){
+    }else if (a == 1){
         std::cout << "One" << std::endl;
-    }if (a == 2){
+    }else if (a == 2){
         std::cout << "two" << std::endl;
-    }if (a > 2){
+    }else if (a > 2){
         std::cout << "a lot" << std::endl;
     }
 
