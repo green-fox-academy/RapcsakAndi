@@ -10,10 +10,18 @@ int main() {
     // - In `colors[2]` store the shades of pink:
     //   `"orchid", "violet", "pink", "hot pink"`
 
-    std::string colors [0] = {"lime", "forest green", "olive", "pale green", "spring green" };
-    std::string colors [1] = {"orange red", "red", "tomato"};
-    std::string colors [2] = {"orchid", "violet", "pink", "hot pink"};
+    /*std::string colors [5] = {"lime", "forest green", "olive", "pale green", "spring green" };
+    std::string colors [3] = {"orange red", "red", "tomato"};
+    std::string colors [4] = {"orchid", "violet", "pink", "hot pink"};*/
 
+    std::string colors1 [3][5] = {{"lime", "forest green", "olive", "pale green", "spring green"}, {"orange red", "red", "tomato"}, {"orchid", "violet", "pink", "hot pink"}};
 
-    return 0;
+    for ( int i = 0; i < 3; i++ ) {
+        for (int j = 0; j <5; j++) {
+
+            std::cout << colors1[i][j]<< "   ";
+        }
+        std::cout << std::endl;
+    }
+        return 0;
 }

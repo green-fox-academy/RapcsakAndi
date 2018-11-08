@@ -11,16 +11,26 @@ int main() {
     //
     // Sum: 22, Average: 4.4
 
-    int n;
-    std::cout << "Enter a number: ";
-    cin >> n;
-    bool lastnumber = true;
-    lastnumber = -1
 
-    lastnumber
-      cout>> "\n";
-    sum = n;
-    cout<< sum << endl;
+    int n;
+    std::cout << "Enter how many number will you type: ";
+    std::cin >> n;
+    int sum = 0;
+    int ave = 0;
+
+    for(int i=0; i<n; i++){
+        int z;
+        std::cout<< "Enter the numbers: "<<std::endl;
+        std::cin >>z;
+        sum +=z;
+        ave = sum/n;
+
+        }
+    std::cout<< "Sum: "<< sum << "Average: "<< ave <<std::endl;
+
+
+
+
 
 
     return 0;

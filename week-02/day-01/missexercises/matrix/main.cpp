@@ -13,12 +13,19 @@ int main() {
     //   0 0 0 1
     //
     // - Print this two dimensional array to the output
-    int const input = 5;
-    int matrix[input][input];
 
-    for (int i = 0; i < input; ++i)
+    int n;
+    std::cout<<"Enter a number:";
+    std::cin>>n;
+    int m;
+    std::cout<<"Enter a number:";
+    std::cin>>m;
+
+    int matrix[n][m];
+
+    for (int i = 0; i < n; ++i)
     {
-        for (int j = 0; j < input; ++j)
+        for (int j = 0; j < m; ++j)
         {
             if(i == j)
             {
