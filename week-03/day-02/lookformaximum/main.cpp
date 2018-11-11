@@ -14,10 +14,23 @@ int main() {
 
     int array [a];
 
-    for (int b = 0; b < a; ++b){
-
-        std::cin>>array[b];
+    for (int b = 0; b < a; ++b) {
+        std::cout << "your numbers are: " << std::endl;
+        array [b] = 0;
+        std::cin >> array[b];
     }
+
+    for (int i = 1; i < a; ++i) {
+        int biggest = array[i];
+        if (array [0] < array[i])
+                array [0] = array[i];
+        }
+
+    std::cout << "Biggest element = " << array[0]<<std::endl;
+    std::cout<<"Its memory address is: "<<&array[0]<<std::endl;
+
+
+
 
 
     return 0;
