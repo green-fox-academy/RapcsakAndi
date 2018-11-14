@@ -19,11 +19,8 @@ public:
 
     float getInkAmount();
 
-    void eat();
+    void use();
 
-    void drink();
-
-    void play();
 
 };
 

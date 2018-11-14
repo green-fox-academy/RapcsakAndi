@@ -11,21 +11,13 @@ std::string Sharpei::getColor(){
     return _color;
 }
 
-int Shaprei::getWidth() {
+float Sharpei::getWidth() {
     return _width;
 }
-int Sharpei::getInkAmount(){
-    return _thirst;
+float Sharpei::getInkAmount(){
+    return _inkAmount;
 }
 
-void Animal::eat(){
-    _hunger--;
-}
-void Animal::drink(){
-    _thirst--;
-}
-void Animal::play(){
-    _hunger++;
-    _thirst++;
-
+void Sharpei::use(){
+    _inkAmount -=5;
 }

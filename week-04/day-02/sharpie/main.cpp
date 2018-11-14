@@ -15,9 +15,10 @@ class Sharpei;
 int main() {
 
 
+    Sharpei sharpei("brown", 5.9);
 
-    Sharpei sharpei(std::string color, float width);
-
-
+    std::cout<<"Ink amount is: " << sharpei.getInkAmount()<<" "<<sharpei.getWidth()<<" "<<sharpei.getColor()<<std::endl;
+    sharpei.use();
+    std::cout<<"Ink amount is: " << sharpei.getInkAmount()<<" "<<sharpei.getWidth()<<" "<<sharpei.getColor()<<std::endl;
     return 0;
 }
