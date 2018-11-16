@@ -8,9 +8,9 @@ int main() {
     /* Create a function named is anagram following your current language's style guide.
      * It should take two strings and return a boolean value depending on whether its an anagram or not.*/
     std::string a = "remek";
-    std::string b = "merek";
+    std::string b = "mezek";
     isAnagram(a,b);
-    std::cout<<"remek an merek is: "<<isAnagram<<std::endl;
+    std::cout<<"remek az merek is: "<<isAnagram<<std::endl;
     return 0;
 }
 
