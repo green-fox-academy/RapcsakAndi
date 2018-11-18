@@ -11,9 +11,9 @@ int main() {
     int p2 [] = {4, 5};
 
     if ( sizeof(p1) < sizeof (p2)) {
-        std::cout << "no" << std::endl;
+        std::cout << "p2 has more elements than p1" << std::endl;
     }
-    else if (sizeof (p1) > sizeof (p2)){
+    else {
         std::cout << "p1 has more elements than p2" << std::endl;
     }
     return 0;

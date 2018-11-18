@@ -2,17 +2,15 @@
 #include <string>
 #include <vector>
 
-std::vector<std::string> makingMatches(const std::vector<std::string>& girls, const std::vector<std::string>& boys)
-{
+std::vector<std::string> makingMatches(const std::vector<std::string>& girls, const std::vector<std::string>& boys) {
     std::vector<std::string> couples(boys);
     int j = 1;
-    for (int i = 0; i < girls.size(); ++i)
-    {
-        couples.insert((couples.begin()+j),girls[i]);
+    for (int i = 0; i < girls.size(); ++i) {
+        couples.insert((couples.begin() + j), girls[i]);
         j += 2;
     }
     return couples;
-
+}
    /*
     std::vector<std::string> couples(girls);
     int j = 1;

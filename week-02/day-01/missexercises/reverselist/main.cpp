@@ -15,7 +15,7 @@ int main() {
 
 
     for ( int i = 0; i < sizeof(aj)/ sizeof(aj[0]); i++){
-        std::cout<< aj[i]<<std::endl;
+        std::cout<< aj[i];
     }
 
     return 0;

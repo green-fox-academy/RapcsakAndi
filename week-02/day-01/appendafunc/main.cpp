@@ -16,5 +16,7 @@ int main() {
 }
 
 std::string appendAFunc (std::string name){
-     std::cout << name << "a " << std::endl;
+     /*std::cout << name << "a " << std::endl;*/
+     name.append("a");
+     std::cout<<name<<std::endl;
 }

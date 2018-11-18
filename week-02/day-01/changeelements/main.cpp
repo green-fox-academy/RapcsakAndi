@@ -10,7 +10,6 @@ int main() {
 
     s [3] = 4;
 
-
     std::cout << s [3] << std::endl;
     return 0;
 }

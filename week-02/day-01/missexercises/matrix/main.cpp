@@ -17,9 +17,7 @@ int main() {
     int n;
     std::cout<<"Enter a number:";
     std::cin>>n;
-    int m;
-    std::cout<<"Enter a number:";
-    std::cin>>m;
+    int m = n;
 
     int matrix[n][m];
 
