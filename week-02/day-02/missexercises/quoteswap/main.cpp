@@ -7,6 +7,7 @@ std::vector<std::string> quoteSwap(std::vector<std::string> quote){
     swap(quote[2],quote[5]);
     for(int i=0; i<quote.size(); ++i)
         std::cout << quote[i] << ' ';
+    return quote;
 }
 
 int main(int argc, char* args[])
