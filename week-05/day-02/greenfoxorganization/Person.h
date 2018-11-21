@@ -7,29 +7,25 @@ enum class Gender{
     MALE,
     FEMALE
 };
-enum class LEVEL{
-    JUNIOR,
-    INTERMEDIATE,
-    SENIOR
-};
 
 class Person {
-private:
+protected:
     std::string _name;
     int _age;
-    std::string _gender;
+    Gender _gender;
+
 public:
-    Person(std::string name);
+    Person();
 
-    std::string getName;
+    Person(std::string name, int age, Gender gender);
 
-    int getAge;
+    virtual void introduce();
 
-    std::string getGender;
+    virtual void getGoal();
 
-    void introduce(std::string name, int age, std::string gender);
+    std::string genderToString();
 
-    void getGoal();
+
 };
 
 

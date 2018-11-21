@@ -1,3 +1,9 @@
+#include "Student.h"
+#include "Mentor.h"
+#include "Sponsor.h"
+#include "Cohort.h"
+#include <vector>
+
 int main()
 {
     std::vector<Person*> people;

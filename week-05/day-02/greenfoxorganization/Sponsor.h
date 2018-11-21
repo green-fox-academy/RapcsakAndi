@@ -10,11 +10,15 @@ private:
     std::string _company;
     int _hiredStudents;
 public:
-    void introduce();
+    Sponsor(std::string name, int age, Gender gender, std::string company);
+
+    Sponsor();
+
+    void introduce() override;
 
     void hire();
 
-    void getGoal();
+    void getGoal()override;
 
 };
 #endif //GREENFOXORGANIZATION_SPONSOR_H

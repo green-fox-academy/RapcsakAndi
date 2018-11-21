@@ -1,18 +1,23 @@
 #include "Student.h"
 #include "Person.h"
-#include "Chohort.h"
+#include "Cohort.h"
 
-class Student{
+Student::Student (std::string name, int age, Gender gender, std::string previousOrganization) : Person (name, age, gender){
     _previousOrganization = previousOrganization;
-    _skippedDays = skippedDays;
+    _skippedDays = 0;
 };
+Student::Student() : Person(){
+    _previousOrganization = "The School of Life";
+    _skippedDays = 0;
 
-void getGoal(){
+}
+
+void Student::getGoal(){
     std::cout<<"My goal is: Be a junior software developer."<<std::endl;
 };
-void introduce(){
-    std::cout<<"Hi, I'm "<<name<<", a "<<age<<" year old "<<gender<<" from "<<previousOrganization<<" who skipped "<<skippedDays<<" days from the course already."<<std::endl;
+void Student::introduce(){
+    std::cout<<"Hi, I'm "<<_name<<", a "<<_age<<" year old "<<genderToString()<<" from "<<_previousOrganization<<" who skipped "<<_skippedDays<<" days from the course already."<<std::endl;
 };
-int skippedDays(numberOfDays){
-    return skippedDays*numberOfDays;
+void Student::skipDays(int numberOfDays){
+    _skippedDays = _skippedDays+numberOfDays;
 };
