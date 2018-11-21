@@ -6,9 +6,13 @@
 
 
 class StringedInstrument : public Instrument{
-private:
+protected:
     int numberOfStrings;
+
+public:
+    StringedInstrument(std::string name, int numberOfStrings);
     virtual void sound() = 0;
+    void play () override;
 };
 
 
