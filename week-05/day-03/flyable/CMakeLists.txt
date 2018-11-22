@@ -3,4 +3,4 @@ project(flyable)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(flyable main.cpp)
+add_executable(flyable main.cpp Flyable.cpp Flyable.h Vehicle.cpp Vehicle.h Animal.cpp Animal.h Bird.cpp Bird.h Helicopter.cpp Helicopter.h)
