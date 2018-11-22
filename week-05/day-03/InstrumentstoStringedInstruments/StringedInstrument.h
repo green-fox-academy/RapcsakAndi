@@ -7,11 +7,10 @@
 
 class StringedInstrument : public Instrument{
 protected:
-    int numberOfStrings;
-
+    int _numberOfStrings;
+    virtual std::string sound() = 0;
 public:
-    StringedInstrument(std::string name, int numberOfStrings);
-    virtual void sound() = 0;
+    StringedInstrument(int numberOfStrings);
     void play () override;
 };
 
