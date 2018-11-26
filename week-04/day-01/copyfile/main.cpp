@@ -6,11 +6,11 @@
 // It should take the filenames as parameters
 // It should return a boolean that shows if the copy was successful
 
-void copyFile(std::ifstream theFile);
+bool copyFile(std::string src, std::string cel);
 
 int main() {
 
-    std::ifstream theFile;
+    /*std::ifstream theFile;
     theFile.open("../my-file.txt");
     std::string name;
     std::string species;
@@ -20,21 +20,42 @@ int main() {
         std::cout << ":-)" << std::endl;
     } else {
         std::cout << ":-(" << std::endl;
+        return 2;
     }
     while(theFile>>name>>species>>ages){
         std::cout<< "Animal name is: " << name << " Species: " << species << " Ages: " << ages << std::endl;
+    }*/
+
+    if(!copyFile("../my-file.txt", "../my-new-file.txt")){
+        return 2;
     }
 
-    std::ofstream myNewFile;
-    myNewFile.open("../my-new-file.txt");
 
-    copyFile(theFile);
     return 0;
 }
-void copyFile(std::ifstream theFile,std::ofstream myNewFile ){
-    std::ofstream myNewFile;
-    myNewFile.open("../my-new-file.txt");
 
-    myNewFile<<theFile;
+bool copyFile(std::string src, std::string cel) {
+
+    std::ifstream theFile;
+    std::ofstream myNewFile;
+    std::string line;
+    theFile.open(src);
+    myNewFile.open(cel);
+
+    if (theFile.is_open()) {
+        std::cout << ":-)" << std::endl;
+    } else {
+        std::cout << ":-(" << std::endl;
+        return false;
+    }
+    while (std::getline(theFile, line)) {
+
+        myNewFile << line << std::endl;
+    }
+
+    theFile.close();
     myNewFile.close();
+
+    return true;
 }
+
