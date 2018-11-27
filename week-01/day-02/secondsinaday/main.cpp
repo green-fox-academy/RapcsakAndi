@@ -13,7 +13,7 @@ int main() {
 
     int remainingSeconds = 60 * 60 * 24 - (currentSeconds + currentMinutes * 60 + currentHours * 60 * 60);
 
-    std::cout << "remainingSeconds: " << remainingSeconds << std::endl;
+    std::cout << "Remaining seconds from the day:  " << remainingSeconds << std::endl;
 
     return 0;
 }

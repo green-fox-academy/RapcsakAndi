@@ -5,7 +5,7 @@ int main() {
     // Swap the values of the variables
     int a = 123;
     int b = 526;
-    int c = 0;
+    /*int c = 0;
 
     c = a;
     a = b;
@@ -13,7 +13,9 @@ int main() {
 
 
     std::cout << a << std::endl;
-    std::cout << b << std::endl;
+    std::cout << b << std::endl;*/
+    std::swap(a,b);
+    std::cout<<a<<", "<<b<<std::endl;
 
     return 0;
 }

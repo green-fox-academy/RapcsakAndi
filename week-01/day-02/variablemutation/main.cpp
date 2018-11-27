@@ -54,6 +54,9 @@ int main() {
     } else {
         std::cout << "false" << std::endl;
     }*/
+    bool wichbigger1 = false;
+    if(g1<g2*2){wichbigger1 = true; }
+    std::cout <<"wtf"<< std::boolalpha << wichbigger1 << std::endl;
 
     int h = 135798745;
     // tell if it has 11 as a divisor (print as a boolean)
@@ -62,6 +65,10 @@ int main() {
     }else {
         std:: cout << "false" << std::endl;
     }*/
+    bool divisor = true;
+    if(h % 11 == 0)
+        std::cout << "wtf is this" << std::boolalpha << divisor << std::endl;
+
 
     int i1 = 10;
     int i2 = 3;
@@ -74,7 +81,7 @@ int main() {
         }*/
     bool question = true;
     if ( i1 > i2 * i2 && i1 <i2 * i2 * i2){
-        std::cout<< std::boolalpha<< question<<std::endl;
+        std::cout<< "question"<<std::boolalpha<< question<<std::endl;
     }
 
     int j = 1521;

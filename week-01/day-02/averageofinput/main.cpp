@@ -18,6 +18,7 @@ int main() {
     int e;
     std::cin >> e;
 
+
     int sum;
     sum = a + b + c + d + e;
     int average;

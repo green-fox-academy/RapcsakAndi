@@ -6,10 +6,12 @@ int main() {
 
     int a = 0;
     while (a<=100){
-        std::cout << "I won't cheat on the exams!" << std::endl;
-        /*a = a + 1;*/
+        std::cout << a<<" I won't cheat on the exams!" << std::endl;
         a++;
     }
 
+    /*for (int i = 0; i <=100 ; ++i) {
+        std::cout<< i<<" I won't cheat on the exams!" << std::endl;
+    }*/
     return 0;
 }
