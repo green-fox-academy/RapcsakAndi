@@ -18,8 +18,6 @@ int sum (int numbers) {
     int y = 0;
     for (int x = 1; x <= numbers; x++) {
         y = y + x;
-
     }
-
     return y;
 }

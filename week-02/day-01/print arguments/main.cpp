@@ -17,11 +17,15 @@ int main() {
     // printParams("first", "second", "third", "fourh")
     // ...
     std::string first = "first";
+    std::string second = "second";
+    std::string third = "third";
+    std::string fourth = "fourth";
+
 
     printParams(first);
-    printParams("first", "second");
-    printParams("first", "second", "third");
-    printParams("first", "second", "third", "fourth");
+    printParams(first, second);
+    printParams(first, second, third);
+    printParams(first, second, third, fourth);
 
     return 0;
 }

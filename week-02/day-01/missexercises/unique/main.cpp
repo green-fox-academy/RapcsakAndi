@@ -33,7 +33,6 @@ void question(int numbers[], int size){
         for (j =0; j <i; j++){
             if ( numbers [i] == numbers [j])
                  break;
-
         }
         if (i == j)
             std::cout<<numbers[i]<< " ";
