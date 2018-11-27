@@ -7,6 +7,7 @@
 // Write a function that returns an array with the unique IP adresses.
 // Write a function that returns the GET / POST request ratio.
 
+
 int main() {
     std::ifstream logFile;
     logFile.open("../logs.txt");
@@ -22,11 +23,20 @@ int main() {
         std::cout << ":-(" << std::endl;
         return 2;
     }
-    while(std::getline(logFile, data, data, data, data, data, IPAdress, getPost)){
-        
+    while (std::getline(logFile, data)) {
+        logFile >> data >> data >> data >> data >> data >> IPAdress >> getPost;
     }
 
+    if (logFile.is_open()) {
+        while (getline(logFile, data)) {
+            logFile >> data >> data >> data >> data >> data >> IPAdress >> getPost;
+            if (getPost == "GET") {
+                get++;
+            } else if (getPost == "POST") {
+                post++;
+            }
 
-
-    return 0;
+            return 0;
+        }
+    }
 }
