@@ -23,7 +23,12 @@ int main(int argc, char* args[])
     // Your job is to decode the notSoCrypticMessage by using the map as a look up table
     // Assemble the fragments into the out variable
     for (int i = 0; i < notSoCrypticMessage.size(); ++i) {
-        out.append(map[notSoCrypticMessage[i]]);
+        int vectorElement = notSoCrypticMessage[i];
+        std::string text = map[vectorElement];
+        out += text;
+
+
+        // out.append(map[notSoCrypticMessage[i]]);
 
     }
 

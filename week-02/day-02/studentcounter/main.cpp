@@ -6,12 +6,25 @@
 
 std::vector<std::string> getChildrenWithMoreThanFourCandies(const std::vector<std::pair<std::string, std::map<std::string, int>>>& students)
 {
+    std::vector<std::string> child;
+    for (int j = 0; j < students.size(); ++j) {
+        std::pair<std::string, std::map<std::string, int>> vectorElements = students[j];
+        if (vectorElements.second["candies"] > 4) {
+            child.push_back(vectorElements.first);
+        }
+    }return child;
 
-}
+};
 
 int sumOfAgeWithLessThanFiveCandies(const std::vector<std::pair<std::string, std::map<std::string, int>>>& students)
-{
-
+{   int sum = 0;
+    for (int i = 0; i < students.size(); ++i) {
+        std::pair<std::string, std::map<std::string, int>> vectorElements = students[i];
+        if(vectorElements.second["candies"]<5){
+            sum += vectorElements.second["age"];
+        }
+    }
+    return sum;
 }
 
 int main(int argc, char* args[])
