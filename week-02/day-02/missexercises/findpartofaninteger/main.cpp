@@ -13,7 +13,7 @@ int main(int argc, char* args[])
     std::vector<int> numbers = {1, 11, 34, 52, 61};
     subInt(1, numbers);
     //  should print: `[0, 1, 4]`
-    subInt(1, numbers);
+    subInt(7, numbers);
     //  should print: '[]'
 
     return 0;
@@ -21,7 +21,7 @@ int main(int argc, char* args[])
 std::vector<int> subInt(int x, std::vector<int> &numbers){
     std::vector<int> digits;
     for (int i = 0; i <numbers.size() ; ++i) {
-        if ((numbers[i] / 10) == numbers[0] || (numbers[i] % 10) == numbers[0]){
+        if ((numbers[i] / 10) == x || (numbers[i] % 10) == x){
         digits.push_back(i);
         }
     }std::cout<<"[";
