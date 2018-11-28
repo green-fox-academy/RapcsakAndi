@@ -2,10 +2,9 @@
 #include <string>
 #include <vector>
 
-std::vector<int> subStrList(std::string list,std::vector<std::string> searchArr );
+std::vector<int> subStrList(std::string list, std::vector<std::string> searchArr);
 
-int main(int argc, char* args[])
-{
+int main(int argc, char *args[]) {
     //  Create a function that takes a string and a vector of string as a parameter
     //  Returns the index of the string in the vector where the first string is part of
     //  Only need to find the first occurence and return the index of that
@@ -17,7 +16,7 @@ int main(int argc, char* args[])
     subStrList("ching", searchArr);
 
     for (int j = 0; j < index.size(); ++j) {
-        std::cout<<index[j]<<std::endl;
+        std::cout << index[j] << std::endl;
     }
     //  should print: `4`
     subStrList("not", searchArr);
@@ -25,14 +24,15 @@ int main(int argc, char* args[])
 
     return 0;
 }
-std::vector<int> subStrList(std::string list,std::vector<std::string> searchArr ){
+
+std::vector<int> subStrList(std::string list, std::vector<std::string> searchArr) {
     std::vector<int> index;
-    for (int i = 0; i <searchArr.size() ; ++i) {
-        if(searchArr[i].find(list) != std::string::npos){
+    for (int i = 0; i < searchArr.size(); ++i) {
+        if (searchArr[i].find(list) != std::string::npos) {
             index.push_back(i);
         }
     }
-    if(index.size()==0){
+    if (index.size() == 0) {
         index.push_back(-1);
     }
     return index;
