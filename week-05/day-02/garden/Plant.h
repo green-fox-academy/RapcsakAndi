@@ -5,11 +5,17 @@
 
 class Plant {
 public:
-    Plant(std::string color, std::string plant);
+    Plant();
+    Plant(float waterAmount, std::string color);
+    virtual void watering(float water) = 0;
+    bool getNeedsWater();
+    float getWaterAmount();
+    std::string getColor();
+protected:
+    float _waterAmount;
     std::string _color;
-    std::string _plant;
-    bool needsWater;
-    void getWater();
+    bool _needsWater;
+
 
 };
 

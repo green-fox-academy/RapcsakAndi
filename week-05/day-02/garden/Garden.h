@@ -1,13 +1,18 @@
-//
-// Created by Andi on 2018.11.27..
-//
-
 #ifndef GARDEN_GARDEN_H
 #define GARDEN_GARDEN_H
 
+#include "Plant.h"
+#include <vector>
 
 class Garden {
-
+private:
+    std::vector<Plant*> _plants;
+    int _needsWater = 0;
+public:
+    Garden();
+    void fillGarden(Plant* plant);
+    void watering(float waterAmount);
+    void checkThirstyPlants();
 };
 
 
