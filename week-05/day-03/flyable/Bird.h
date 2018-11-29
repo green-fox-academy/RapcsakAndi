@@ -5,11 +5,19 @@
 #include "Animal.h"
 
 
-class Bird : public Flyable, Animal{
+class Bird : public Flyable, public Animal
+{
+
 public:
-    void takeOff() override;
+    Bird(std::string name);
 
+    virtual void takeOff() override;
 
+    virtual void land() override;
+
+    virtual void fly() override;
+
+    virtual std::string breed() override;
 };
 
 

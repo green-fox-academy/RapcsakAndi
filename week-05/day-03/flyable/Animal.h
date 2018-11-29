@@ -5,9 +5,15 @@
 #include <iostream>
 
 class Animal: public Flyable {
-public:
+protected:
     std::string _name;
+    int _age;
+
+public:
+    Animal();
     Animal(std::string name);
+    void loveLife();
+    virtual std::string breed() = 0;
 };
 
 

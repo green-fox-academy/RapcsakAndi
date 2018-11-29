@@ -1,13 +1,18 @@
 #ifndef FLYABLE_HELICOPTER_H
 #define FLYABLE_HELICOPTER_H
 
+#include "Flyable.h"
 #include "Vehicle.h"
 
 
-class Helicopter : public Flyable, Vehicle {
+
+class Helicopter : public Flyable, public Vehicle {
 public:
     Helicopter(std::string name);
-    void fly() override;
+    virtual void takeOff() override;
+    virtual void fly() override;
+    virtual void land() override;
+
 
 };
 

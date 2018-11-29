@@ -6,12 +6,14 @@
 #include <iostream>
 
 
-class Vehicle : public Flyable {
-public:
+class Vehicle {
+protected:
     std::string _name;
     int _wheelsNumber;
     std::string _color;
+public:
     Vehicle(std::string name);
+    Vehicle();
 
 };
 
