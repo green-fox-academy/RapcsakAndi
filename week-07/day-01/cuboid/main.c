@@ -9,6 +9,16 @@ int main()
     // Surface Area: 600
     // Volume: 1000
 
+    double a, b, c;
+    printf("Enter three integers:\n");
+    scanf("%lf%lf%lf", &a, &b, &c);
+
+    double surface = (a * b  + a * c + b *c)* 2;
+    double volume = a * b * c;
+
+    printf("Surface Area : %.lf\n", surface);
+    printf("Volume : %.lf\n", volume);
+
 
 
 
