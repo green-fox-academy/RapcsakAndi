@@ -1,6 +1,6 @@
 #include "Car.h"
 
-Car::Car(int id, std::string &licensePlate, int manufactureYear, bool hasParkingTicket)
+Car::Car(int id, std::string licensePlate, int manufactureYear, bool hasParkingTicket)
 {
     _id = id;
     _licensePlate = licensePlate;

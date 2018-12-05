@@ -3,7 +3,7 @@
 #include <vector>
 #include <sstream>
 
-#include "park.h"
+#include "Park.h"
 
 Park readFromFile(std::string fileName);
 void writeToFile(std::string fileName, Park carpark);

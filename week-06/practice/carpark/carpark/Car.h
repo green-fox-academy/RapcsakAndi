@@ -11,7 +11,7 @@ private:
     int _maufactureYear;
     bool _hasParkingTicket;
 public:
-    Car(int id, std::string &licensePlate, int manufactureYear, bool hasParkingTicket);
+    Car(int id, std::string licensePlate, int manufactureYear, bool hasParkingTicket);
     void setHasParkingTicket(bool hasParkingTicket);
     int getId();
     std::string getLicensePlate();
