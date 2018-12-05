@@ -14,10 +14,9 @@ int main(){
 
     int result1 = sumDigits(n);
     int result2 = sumDigits(m);
-    printf("%d\n%d", result1,result2);
-    int newResult;
-    newResult = compareDigits(result1, result2);
-    printf(("%d\n", newResult));
+    printf("%d\n%d\n", result1,result2);
+
+    printf("%d\n", compareDigits(n, m));
 
     return 0;
 }
