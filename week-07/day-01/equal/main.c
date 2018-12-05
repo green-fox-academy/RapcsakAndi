@@ -16,19 +16,17 @@ int main()
     printf("Enter another number:\n");
     scanf("%d", &secondNumber);
 
-    int j = equalOrNot(firstNumber, secondNumber);
 
-    printf("%d", j);
+    printf("%d", equalOrNot(firstNumber, secondNumber));
 
 
     return 0;
 }
 
 int equalOrNot(int a, int b){
-    int c = 2;
+
     if (a == b){
-         c = 1;
-    }else
-         c = 0;
-    return c;
+         return 1;
+    }else;
+         return 0;
 }

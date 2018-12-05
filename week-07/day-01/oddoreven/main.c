@@ -14,18 +14,16 @@ int main()
     printf("Enter a number:\n");
     scanf("%d", &userNumber);
 
-    int returnNumber = oddOrEven(userNumber);
-    printf("%d", returnNumber);
+
+    printf("%d", oddOrEven(userNumber));
 
     return 0;
 }
 
 int oddOrEven(int a){
-    int c = 3;
-    if (a % 2 == 0)
-        c = 1;
-    else
-        c = 0;
 
-    return c;
+    if (a % 2 == 0)
+        return 1;
+    else
+        return 0;
 }
