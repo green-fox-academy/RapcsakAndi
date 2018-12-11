@@ -8,7 +8,15 @@
 
 int main()
 {
-    int* pointer = NULL;
+    int *pointer = NULL;
+    pointer = (int *) calloc(10, sizeof(int));
+    for (int i = 0; i < 5; ++i) {
+        pointer[i] = i;
+    }
+    for (int i = 0; i < 10; ++i)
+        printf("pointer[%d] == %d\n", i, pointer[i]);
+
+    free(pointer);
 
     return 0;
 }
