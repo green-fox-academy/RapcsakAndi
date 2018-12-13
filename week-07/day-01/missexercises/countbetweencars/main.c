@@ -1,28 +1,49 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+
+void number_between_character(char *word, char character);
 
 int main()
 {
-    char *buff = "this is a test string";
+    // Create a function which takes a string as a parameter and
+    // returns the number of characters between two repeating characters
+    // the repeating char can be a local variable in the function itself or
+    // it can be passed to the function as parameter
+    char character, word[50];
 
-    char subbuff[5];
-    memcpy( subbuff, &buff[10], 4 );
-    subbuff[4] = '\0';
 
-    printf("%s", subbuff);
+    printf("Now enter a word: \n");
+    scanf("%s", word);
+    printf("Enter character: \n");
+    scanf(" %c", &character);
 
-    char s[] = "THESTRINGHASNOSPACES";
-    size_t i, slen = strlen(s);
-    for (i = 0; i < slen; i += 4) {
-        printf("%.4s\n", s + i);
+
+    // the output should be: 6 (in this case the repeating char was 'g')
+    number_between_character(word, character);
+
+    return 0;
+}
+
+void number_between_character(char *word, char character)
+{
+    int array[5];
+    int number = 0;
+    int i;
+    int k = 0;
+
+    for (i = 0; i < strlen(word); ++i) {
+        if (word[i] == character){
+            array[k] = i;
+            k++;
+        }
     }
 
-    const char haystack[20] = "TutorialsPoint";
-    const char needle[10] = "Point";
-    char *ret;
+    // 2 5 7
+    //printf("array[%d] == %d\n", i, array[i]);
 
-    ret = strstr(haystack, needle);
-
-    printf("The substring is: %s\n", ret);
-    return 0;
+    for (int i = 0; i < k-1; i++) {
+        number = array[i + 1] - array[i];
+        printf("%d ", number);
+    }
 }
