@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-char new_string(char *word);
+char *new_string(char *word);
 
 int main()
 {
@@ -16,16 +16,24 @@ int main()
     printf("Enter a word?\n");
     scanf("%s", word);
 
-    printf("The new word is: %s",new_string(word));
+    char *result = new_string(word);
+   printf("The new word is: %s", result);
+
+   free(result);
 
     return 0;
 }
 
-char new_string(char *word)
+char *new_string(char *word)
 {
+    char *word2 = (char*)calloc(strlen(word), sizeof(char));
+    strcpy(word2,word);
 
-    char character = 'a';
-    strcat(word, character);
+    char * newString = strcat(word2, "a");
+    printf("%d\n",strlen(word));
+    printf("%d\n",strlen(word2));
+    printf("%d\n",strlen(newString));
 
-    return strcat;
+
+    return newString;
 }
