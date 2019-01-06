@@ -47,7 +47,7 @@ int main()
 
 int find_a_character(char *word, char character)
 {
-    int i, freq = 0;
+    int i;
     for (i = 0; i < strlen(word); i++) {
         if (word[i] == character) {
             return i;
