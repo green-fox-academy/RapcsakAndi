@@ -12,7 +12,7 @@ int main()
 
     for (int i = 0; i < strlen(string); ++i) {
         if(i == 0){
-            strupr (&string[i]); // blalbala
+            strupr (&string[i]); // blDADFHAERGalbala
         }else
            strlwr (&string[i]);
     }
