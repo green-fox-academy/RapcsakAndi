@@ -12,7 +12,7 @@ int main()
 
     for (int i = 0; i < strlen(string); ++i) {
         if(i == 0){
-            strupr (&string[i]); // nimnfdtu
+            strupr (&string[i]);
         }else
            strlwr (&string[i]);
     }
